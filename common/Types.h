@@ -44,6 +44,6 @@ struct ExecutionReport {
     uint32_t fillQty;     // Quantity filled
     char sym[8];
 };
-#pragma pack(pop)
+#pragma pack(pop) // now only push and pop within this the alignment of memory layout is saved. rest is normal.
 
 #endif
