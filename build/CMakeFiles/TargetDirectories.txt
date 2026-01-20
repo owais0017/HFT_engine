@@ -1,3 +1,4 @@
 /Users/owaisfayazshah/Desktop/Distributed_Order_Matching_Engine/build/CMakeFiles/sequencer_app.dir
+/Users/owaisfayazshah/Desktop/Distributed_Order_Matching_Engine/build/CMakeFiles/gateway_client.dir
 /Users/owaisfayazshah/Desktop/Distributed_Order_Matching_Engine/build/CMakeFiles/edit_cache.dir
 /Users/owaisfayazshah/Desktop/Distributed_Order_Matching_Engine/build/CMakeFiles/rebuild_cache.dir

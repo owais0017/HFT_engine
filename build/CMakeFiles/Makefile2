@@ -64,10 +64,12 @@ CMAKE_BINARY_DIR = /Users/owaisfayazshah/Desktop/Distributed_Order_Matching_Engi
 
 # The main recursive "all" target.
 all: CMakeFiles/sequencer_app.dir/all
+all: CMakeFiles/gateway_client.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/sequencer_app.dir/codegen
+codegen: CMakeFiles/gateway_client.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -76,6 +78,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/sequencer_app.dir/clean
+clean: CMakeFiles/gateway_client.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -85,7 +88,7 @@ clean: CMakeFiles/sequencer_app.dir/clean
 CMakeFiles/sequencer_app.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sequencer_app.dir/build.make CMakeFiles/sequencer_app.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sequencer_app.dir/build.make CMakeFiles/sequencer_app.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/owaisfayazshah/Desktop/Distributed_Order_Matching_Engine/build/CMakeFiles --progress-num=1,2,3 "Built target sequencer_app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/owaisfayazshah/Desktop/Distributed_Order_Matching_Engine/build/CMakeFiles --progress-num=3,4,5 "Built target sequencer_app"
 .PHONY : CMakeFiles/sequencer_app.dir/all
 
 # Build rule for subdir invocation for target.
@@ -102,13 +105,45 @@ sequencer_app: CMakeFiles/sequencer_app.dir/rule
 # codegen rule for target.
 CMakeFiles/sequencer_app.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sequencer_app.dir/build.make CMakeFiles/sequencer_app.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/owaisfayazshah/Desktop/Distributed_Order_Matching_Engine/build/CMakeFiles --progress-num=1,2,3 "Finished codegen for target sequencer_app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/owaisfayazshah/Desktop/Distributed_Order_Matching_Engine/build/CMakeFiles --progress-num=3,4,5 "Finished codegen for target sequencer_app"
 .PHONY : CMakeFiles/sequencer_app.dir/codegen
 
 # clean rule for target.
 CMakeFiles/sequencer_app.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sequencer_app.dir/build.make CMakeFiles/sequencer_app.dir/clean
 .PHONY : CMakeFiles/sequencer_app.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/gateway_client.dir
+
+# All Build rule for target.
+CMakeFiles/gateway_client.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway_client.dir/build.make CMakeFiles/gateway_client.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway_client.dir/build.make CMakeFiles/gateway_client.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/owaisfayazshah/Desktop/Distributed_Order_Matching_Engine/build/CMakeFiles --progress-num=1,2 "Built target gateway_client"
+.PHONY : CMakeFiles/gateway_client.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/gateway_client.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/owaisfayazshah/Desktop/Distributed_Order_Matching_Engine/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/gateway_client.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/owaisfayazshah/Desktop/Distributed_Order_Matching_Engine/build/CMakeFiles 0
+.PHONY : CMakeFiles/gateway_client.dir/rule
+
+# Convenience name for target.
+gateway_client: CMakeFiles/gateway_client.dir/rule
+.PHONY : gateway_client
+
+# codegen rule for target.
+CMakeFiles/gateway_client.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway_client.dir/build.make CMakeFiles/gateway_client.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/owaisfayazshah/Desktop/Distributed_Order_Matching_Engine/build/CMakeFiles --progress-num=1,2 "Finished codegen for target gateway_client"
+.PHONY : CMakeFiles/gateway_client.dir/codegen
+
+# clean rule for target.
+CMakeFiles/gateway_client.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway_client.dir/build.make CMakeFiles/gateway_client.dir/clean
+.PHONY : CMakeFiles/gateway_client.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

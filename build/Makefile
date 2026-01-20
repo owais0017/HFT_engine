@@ -129,6 +129,19 @@ sequencer_app/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sequencer_app.dir/build.make CMakeFiles/sequencer_app.dir/build
 .PHONY : sequencer_app/fast
 
+#=============================================================================
+# Target rules for targets named gateway_client
+
+# Build rule for target.
+gateway_client: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gateway_client
+.PHONY : gateway_client
+
+# fast build rule for target.
+gateway_client/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway_client.dir/build.make CMakeFiles/gateway_client.dir/build
+.PHONY : gateway_client/fast
+
 engine/OrderBook.o: engine/OrderBook.cpp.o
 .PHONY : engine/OrderBook.o
 
@@ -152,6 +165,30 @@ engine/OrderBook.s: engine/OrderBook.cpp.s
 engine/OrderBook.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sequencer_app.dir/build.make CMakeFiles/sequencer_app.dir/engine/OrderBook.cpp.s
 .PHONY : engine/OrderBook.cpp.s
+
+gateway.o: gateway.cpp.o
+.PHONY : gateway.o
+
+# target to build an object file
+gateway.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway_client.dir/build.make CMakeFiles/gateway_client.dir/gateway.cpp.o
+.PHONY : gateway.cpp.o
+
+gateway.i: gateway.cpp.i
+.PHONY : gateway.i
+
+# target to preprocess a source file
+gateway.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway_client.dir/build.make CMakeFiles/gateway_client.dir/gateway.cpp.i
+.PHONY : gateway.cpp.i
+
+gateway.s: gateway.cpp.s
+.PHONY : gateway.s
+
+# target to generate assembly for a file
+gateway.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway_client.dir/build.make CMakeFiles/gateway_client.dir/gateway.cpp.s
+.PHONY : gateway.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -185,10 +222,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... gateway_client"
 	@echo "... sequencer_app"
 	@echo "... engine/OrderBook.o"
 	@echo "... engine/OrderBook.i"
 	@echo "... engine/OrderBook.s"
+	@echo "... gateway.o"
+	@echo "... gateway.i"
+	@echo "... gateway.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

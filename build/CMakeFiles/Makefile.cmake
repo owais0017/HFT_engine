@@ -57,4 +57,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/sequencer_app.dir/DependInfo.cmake"
+  "CMakeFiles/gateway_client.dir/DependInfo.cmake"
   )
